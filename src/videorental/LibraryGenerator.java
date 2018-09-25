@@ -3,10 +3,6 @@ package videorental;
 import People.*;
 import java.time.LocalDate;
 
-/**
- * Test XmlSaver
- */
-
 public class LibraryGenerator {
 	
     public static void main(String[] args) {
