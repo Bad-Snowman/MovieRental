@@ -15,9 +15,7 @@ public class Customer extends Person {
     
     public void rentMovie(Movie movie) {
         //TODO
-        
-        //Arrays might not be the smartest way to handle this, as you would have empty spaces.
-        
+                
         //if 
         //  Movie is in stock
         //  Store has movie license
@@ -25,6 +23,7 @@ public class Customer extends Person {
         //  numMoviesAllowed is not exeeded (There is an empty space in the array)
         //then
         //  Add movie to to rentedMovies
+        //  Set the movie's attribute to be rented out
         
     }
     
