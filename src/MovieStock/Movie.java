@@ -1,5 +1,7 @@
 package MovieStock;
 
+import java.time.Period;
+
 public abstract class Movie {
 
     private final String TITLE;
@@ -7,6 +9,7 @@ public abstract class Movie {
     private final int UNIQUE_ID;
     private int ageRating;
     private boolean hasLicense;
+    private Period rentPeriod;
 
     public String getTitle() {
         return TITLE;
@@ -32,9 +35,17 @@ public abstract class Movie {
         return hasLicense;
     } 
    
-    public void hasLicense(boolean hasLicense) {
+    public void setHasLicense(boolean hasLicense) {
         this.hasLicense = hasLicense;
-    } 
+    }
+    
+    public void setRentPeriod(Period rentPeriod) {
+        this.rentPeriod = rentPeriod;
+    }
+    
+    public Period getRentPeriod() {
+        return rentPeriod;
+    }
     
     public Movie(String title, int price, int uniqueID, int ageRating, boolean hasLicence) {
         this.TITLE = title;
@@ -42,5 +53,6 @@ public abstract class Movie {
         this.UNIQUE_ID = uniqueID;
         this.ageRating = ageRating;
         this.hasLicense = hasLicence;
+        this.rentPeriod = Period.ofWeeks(2);
     }
 }
