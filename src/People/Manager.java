@@ -10,8 +10,8 @@ public class Manager extends Person {
         return MANAGER_ID;
     }
     
-    public Manager(String name, String address, LocalDate dateOfBirth, int manager_ID) {
-        super(name, address, dateOfBirth);
+    public Manager(String firstName, String lastName, String address, LocalDate dateOfBirth, int manager_ID) {
+        super(firstName, lastName, address, dateOfBirth);
         this.MANAGER_ID = manager_ID;
     }
 

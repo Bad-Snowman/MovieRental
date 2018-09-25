@@ -10,8 +10,8 @@ public class Customer extends Person {
         return MEMBERSHIP_ID;
     }
     
-    public Customer(String name, String address, LocalDate dateOfBirth, int membership_ID) {
-        super(name, address, dateOfBirth);
+    public Customer(String firstName, String lastName, String address, LocalDate dateOfBirth, int membership_ID) {
+        super(firstName, lastName, address, dateOfBirth);
         this.MEMBERSHIP_ID = membership_ID;
     }
 
