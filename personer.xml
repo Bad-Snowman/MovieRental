@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_121" class="java.beans.XMLDecoder">
+ <array class="Customer.Person" length="3">
+  <void index="0">
+   <object class="Customer.Person" id="Person0">
+    <void property="address">
+     <void property="address">
+      <string>Nørrebrogade</string>
+     </void>
+    </void>
+    <void property="dateOfBirth">
+     <string>1968-03-24</string>
+    </void>
+    <void property="name">
+     <string>Frede</string>
+    </void>
+   </object>
+  </void>
+  <void index="1">
+   <object class="Customer.Person" id="Person1">
+    <void property="address">
+     <void property="address">
+      <string>Islands Brygge</string>
+     </void>
+    </void>
+    <void property="dateOfBirth">
+     <string>1973-11-03</string>
+    </void>
+    <void property="name">
+     <string>Jørgen</string>
+    </void>
+   </object>
+  </void>
+  <void index="2">
+   <object class="Customer.Person" id="Person2">
+    <void property="ID">
+     <int>1</int>
+    </void>
+    <void property="address">
+     <void property="address">
+      <string>Skuldelev Strand</string>
+     </void>
+    </void>
+    <void property="dateOfBirth">
+     <string>1991-08-17</string>
+    </void>
+    <void property="name">
+     <string>Thomas</string>
+    </void>
+   </object>
+  </void>
+ </array>
+</java>
