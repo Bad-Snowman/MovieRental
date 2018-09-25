@@ -4,16 +4,25 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public abstract class Person {
-    private String name;
+    private String firstName;
+    private String lastName;
     private String address;
     private LocalDate dateOfBirth;
     
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
     
     public String getAddress() {
@@ -42,9 +51,10 @@ public abstract class Person {
         
     }
         
-    public Person(String name, String address, LocalDate dateOfBirth) {
+    public Person(String firstName, String lastName, String address, LocalDate dateOfBirth) {
         
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.address = address;
         this.dateOfBirth = dateOfBirth;
         

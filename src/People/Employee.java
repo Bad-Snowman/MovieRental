@@ -10,8 +10,8 @@ public class Employee extends Person {
         return EMPLOYEE_ID;
     }
     
-    public Employee(String name, String address, LocalDate dateOfBirth, int employee_ID) {
-        super(name, address, dateOfBirth);
+    public Employee(String firstName, String lastName, String address, LocalDate dateOfBirth, int employee_ID) {
+        super(firstName, lastName, address, dateOfBirth);
         this.EMPLOYEE_ID = employee_ID;
     }
 
