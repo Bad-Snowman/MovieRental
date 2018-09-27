@@ -5,12 +5,24 @@ package MovieStock;
  */
 public class Stock {
     
-    private final int CAPACITY;                         //THe capacity of the store.
+    private final int CAPACITY;                         //The capacity of the store.
     private Movie[] stock;                              //The movies stocked in the store.
     
     //Returns the store's entire stock of Movies.
     public Movie[] getStock() {
         return stock;
+    }
+    
+    //Returns a movie from ID number.
+    public Movie getMovie(int uniqueID) {
+        
+        for(int i = 0; i < CAPACITY; i++) {             //Looping through all members.
+            if(stock[i].getID() == uniqueID) {          //Checking if the ID matches the i'th member's ID.
+                return stock[i];                        //The member is found.
+            }
+        }
+        return null;                                    //If this line is reached, then the member is not found.
+        
     }
     
     //Checks if the Movie is in stock.
@@ -45,6 +57,7 @@ public class Stock {
         for(int i = 0; i < CAPACITY; i++) {             //Looping through the entire stock.
             if(stock[i] == null) {                      //Checking if the "space on the shelf" is empty.
                 stock[i] = movie;                       //Placing the movie at the i'th index.
+                return;
             }
         }
         
@@ -57,6 +70,7 @@ public class Stock {
             if(stock[i] != null) {                      //Checking if the "space on the shelf" is reserved for a movie.
                 if(movie.getID() == stock[i].getID()) { //Checking if the found space is for that specific movie.
                     stock[i] = null;                    //Removing the movie from the stock.
+                    return;
                 }
             }
         }

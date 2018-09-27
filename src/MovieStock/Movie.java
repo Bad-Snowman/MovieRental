@@ -1,5 +1,6 @@
 package MovieStock;
 
+import java.time.LocalDate;
 import java.time.Period;
 
 /**
@@ -14,6 +15,7 @@ public abstract class Movie {
     private int ageRating;          //The age rating of the movie.
     private boolean isRented;       //Whether or not the movie is rented out.
     private boolean hasLicense;     //Whether or not the store has the license to rent out the movie.
+    private LocalDate dueDate;     //The date the movie is rented out.
     private Period rentPeriod;      //The period a customer can keep the movie when rented.
 
     public String getTitle() { return TITLE; }
@@ -31,6 +33,9 @@ public abstract class Movie {
     
     public boolean getHasLicense() { return hasLicense; }
     public void setHasLicense(boolean hasLicense) { this.hasLicense = hasLicense; }
+    
+    public LocalDate getDueDate() { return dueDate; }
+    public void setDueDate(LocalDate dueDate) { this.dueDate = dueDate; }
     
     public Period getRentPeriod() { return rentPeriod; }
     public void setRentPeriod(Period rentPeriod) { this.rentPeriod = rentPeriod; }
